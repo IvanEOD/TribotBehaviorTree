@@ -31,7 +31,7 @@ private BehaviorTree sequenceTree = BehaviorTree.sequence()
               .node(walkToGrandExchange)
               .build();
               
-private BehaviorTree selectorTree = BehaviorTree.sequence()
+private BehaviorTree selectorTree = BehaviorTree.selector()
               .context(context)
               .node(walkToGrandExchange)
               .build();
